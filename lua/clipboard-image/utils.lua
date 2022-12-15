@@ -121,7 +121,7 @@ M.insert_txt = function(affix, path_txt)
   local curpos = vim.fn.getcurpos()
   local line_num, line_col = curpos[2], curpos[3]
   local indent = string.rep(" ", line_col)
-  local avif = string.sub(path_txt, 0, -4) .. ".avif"
+  local avif = string.sub(path_txt, 0, -4) .. "avif"
   local txt_topaste = string.format(affix, avif)
 
   ---Convert txt_topaste to lines table so it can handle multiline string
